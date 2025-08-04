@@ -44,8 +44,6 @@ def validate_pdf(pdf_path: Path, api_key: str, app_name: str):
 
     except Exception as e:
         print(f"  ❌ Error processing '{pdf_path.name}':", e)
-    # finally:
-        # eyes.abort_if_not_closed()
 
 
 if __name__ == "__main__":
