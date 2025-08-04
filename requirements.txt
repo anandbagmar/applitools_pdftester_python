@@ -2,3 +2,4 @@ eyes-images
 requests
 Pillow
 pytest
+pdf2image
