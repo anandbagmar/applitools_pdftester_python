@@ -12,6 +12,9 @@ env:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+        NODE_OPTIONS: --no-warnings
+        PYTHONWARNINGS: ignore
 
     steps:
 
@@ -28,7 +31,4 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Run the tests
-        env:
-          NODE_OPTIONS: --no-warnings
-          PYTHONWARNINGS: ignore
         run: python pdfTester.py --api-key ${{ secrets.APPLITOOLS_API_KEY }} --pdf-folder "./pdfs" --app-name "applitools_pdftester_python"
