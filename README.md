@@ -10,7 +10,9 @@ It converts each page of a PDF to an image and sends it to Applitools for visual
 ## 🔧 Requirements
 
 - Python 3.7+
-- [Poppler](https://github.com/jalan/pdfsandbox/wiki/Installing-Poppler) (used by `pdf2image`)
+- Poppler (used by `pdf2image`)  
+  Required for rendering PDF pages as images.  
+  ➤ [Official website](https://poppler.freedesktop.org/)
 - Applitools Eyes API key
 
 ---
@@ -46,8 +48,9 @@ sudo apt install poppler-utils
 
 **Windows:**
 
-- Download Poppler for Windows: https://blog.alivate.com.au/poppler-windows/
-- Extract and add the `bin/` folder to your `PATH` environment variable
+- Download Poppler for Windows: https://github.com/oschwartz10612/poppler-windows/releases
+- Extract the ZIP file
+- Add the `bin/` folder to your system `PATH` environment variable
 
 ---
 
