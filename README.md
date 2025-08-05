@@ -67,6 +67,15 @@ export APPLITOOLS_API_KEY=<your_key>
 python pdfTester.py --pdf-folder "/path/to/folder"
 ```
 
+Example:
+
+```bash
+python pdfTester.py \
+  --api-key $APPLITOOLS_API_KEY \
+  --pdf-folder "./pdfs" \
+  --app-name "applitools_pdftester_python"
+```
+
 ---
 
 ## 📂 What It Does
